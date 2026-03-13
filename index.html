@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rafael Cruz | Front-End</title>
+    <title>Rafael Cruz | Front-End</title>
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,81 +18,152 @@
 
 <header class="hero">
 
-<nav class="hero-nav">
+    <nav class="hero-nav">
 
-<div class="logo">
-Rafael Cruz | Dev Front End
-</div>
+        <div class="logo">
+            Rafael Cruz | Dev Front End
+        </div>
 
-<!-- STATUS -->
-<div class="status">
+        <!-- STATUS -->
+        <div class="status">
 
-<div class="status-item xbox-status">
+            <div class="status-item xbox-status">
 
-<i data-lucide="gamepad-2" class="status-icon"></i>
-<span class="status-dot xbox"></span>
+                <i data-lucide="gamepad-2" class="status-icon"></i>
+                <span class="status-dot xbox"></span>
 
-<div class="tooltip xbox-tooltip">
-<span class="tooltip-status">ONLINE</span>
-<span class="tooltip-game">Loading...</span>
-</div>
+                <div class="tooltip xbox-tooltip">
+                    <span class="tooltip-status">Xbox</span>
+                    <span class="tooltip-game">Coming Soon</span>
+                </div>
 
-</div>
+            </div>
 
+            <div class="status-item spotify-status">
 
-<div class="status-item spotify-status">
+                <i data-lucide="headphones" class="status-icon"></i>
+                <span class="status-dot spotify"></span>
 
-<i data-lucide="headphones" class="status-icon"></i>
-<span class="status-dot spotify"></span>
+                <div class="tooltip spotify-tooltip">
+                    <span class="tooltip-artist">Spotify</span>
+                    <span class="tooltip-song">Coming Soon</span>
+                </div>
 
-<div class="tooltip spotify-tooltip">
-<span class="tooltip-artist">Loading...</span>
-<span class="tooltip-song">Loading...</span>
-</div>
+            </div>
 
-</div>
+        </div>
 
-</div>
+        <!-- LINKS -->
+        <div class="nav-links">
 
+            <a href="https://github.com/ookamyabyss" target="_blank" class="nav-link">
+                GIT
+            </a>
 
-<!-- LINKS -->
-<div class="nav-links">
+            <a href="#contato" class="nav-link">
+                CONTACT
+            </a>
 
-<a href="https://github.com/ookamyabyss" target="_blank" class="nav-link">
-GIT
-</a>
+        </div>
 
-<a href="#contato" class="nav-link">
-CONTACT
-</a>
-
-</div>
-
-</nav>
-
-<div class="hero-content">
-
-<h1>Front-End Developer</h1>
-
-</div>
+    </nav>
 
 </header>
 
+
 <main>
 
-<section class="section-placeholder">
-</section>
+    <section class="about-section">
+
+        <div class="about-grid">
+
+            <!-- INFO -->
+            <div class="about-info">
+
+                <h2>Rafael Cruz</h2>
+
+                <ul class="info-list">
+                    <li><strong>Bacharelado</strong> Sistema de Informação | UNEB</li>
+                    <li><strong>Front-End</strong> Junior </li>
+                    <li><strong>Bahia</strong> Salvador </li>
+                    <li>rafaelzinhoccruz@gmail.com | @outlook.com </li>
+                </ul>
+
+            </div>
+
+
+            <!-- SKILLS -->
+            <div class="skills">
+
+                <div class="skills-column">
+
+                    <h3>DEV</h3>
+
+                    <ul class="skills-list dev-skills">
+
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+
+                        <li>Node.js</li>
+                        <li>Git</li>
+                        <li>REST API</li>
+                        <li>Vercel</li>
+                        <li>Responsive Design</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="skills-column">
+
+                    <h3>DESIGN</h3>
+
+                    <ul class="skills-list design-skills">
+
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>UI Design</li>
+                        <li>Figma</li>
+                        <li>Wireframe</li>
+
+                        <li>UX Research</li>
+                        <li>Prototyping</li>
+                        <li>Layout</li>
+                        <li>Branding</li>
+                        <li>Design System</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- FOTO -->
+            <div class="profile-box">
+
+                <img id="profile-img" src="img/profile1.jpg" alt="Rafael Cruz">
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
+
 <footer id="contato">
 
-<h2>Contato</h2>
-<p>Email: rafaelzinhoccruz@gmail.com</p>
+    <h2>Contato</h2>
+    <p>Email: rafaelzinhoccruz@gmail.com</p>
 
 </footer>
 
 <script src="https://unpkg.com/lucide@latest"></script>
+
 <script>
 lucide.createIcons();
 </script>
