@@ -23,9 +23,6 @@ font-weight:400;
 
 position:relative;
 height:100vh;
-
-background:url("../assets/hero.jpeg") center/cover no-repeat;
-
 display:flex;
 flex-direction:column;
 justify-content:space-between;

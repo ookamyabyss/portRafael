@@ -8,10 +8,8 @@ const tokenResponse = await fetch(
 {
 method:"POST",
 headers:{
-"Content-Type":"application/x-www-form-urlencoded",
-"Authorization":"Basic " + Buffer.from(
-client_id + ":" + client_secret
-).toString("base64")
+"Authorization":`Basic ${basic}`,
+"Content-Type":"application/x-www-form-urlencoded"
 },
 body:new URLSearchParams({
 grant_type:"refresh_token",
@@ -32,19 +30,15 @@ Authorization:`Bearer ${tokenData.access_token}`
 )
 
 if(nowPlaying.status === 204){
-
 return res.json({isPlaying:false})
-
 }
 
 const song = await nowPlaying.json()
 
 res.json({
-
 isPlaying:true,
 artist:song.item.artists[0].name,
 song:song.item.name
-
 })
 
 }
