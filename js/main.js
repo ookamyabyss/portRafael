@@ -45,3 +45,32 @@ function rotateSkills(listClass){
 
 rotateSkills("dev-skills");
 rotateSkills("design-skills");
+
+
+// fotos de perfil
+
+
+const images = [
+    "assets/img/1.png",
+    "assets/img/2.png",
+    "assets/img/3.png",
+    "assets/img/4.png",
+    "assets/img/5.png",
+    "assets/img/6.png",
+];
+
+let index = 0;
+
+const profileImg = document.getElementById("profile-img");
+
+setInterval(() => {
+
+    index++;
+
+    if (index >= images.length) {
+        index = 0;
+    }
+
+    profileImg.src = images[index];
+
+}, 30000); // 30 segundos
