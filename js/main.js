@@ -74,3 +74,32 @@ setInterval(() => {
     profileImg.src = images[index];
 
 }, 30000); // 30 segundos
+
+
+// footer divider section 
+
+const path = document.querySelector("#footer-line");
+const light = document.querySelector("#footer-light");
+
+const length = path.getTotalLength();
+
+light.style.strokeDasharray = "120 " + length;
+
+let progress = 0;
+let direction = 1;
+
+function animateDivider(){
+
+    progress += direction * 2;
+
+    if(progress >= length || progress <= 0){
+        direction *= -1;
+    }
+
+    light.style.strokeDashoffset = -progress;
+
+    requestAnimationFrame(animateDivider);
+
+}
+
+animateDivider();
