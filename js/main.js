@@ -54,7 +54,6 @@ const images = [
     "assets/img/1.png",
     "assets/img/2.png",
     "assets/img/3.png",
-    "assets/img/4.png",
     "assets/img/5.png",
     "assets/img/6.png",
 ];
