@@ -479,7 +479,7 @@ body{
 
     font-weight:300;
 
-    font-size:12px;
+    font-size:16px;
 
     letter-spacing:0.15em;
 
@@ -697,6 +697,62 @@ footer h2{
 
 }
 
+.footer-signature{
+
+    margin-top:40px;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:0.75rem;
+
+    letter-spacing:0.08em;
+
+    text-transform:uppercase;
+
+    opacity:3.0;
+
+}
+
+.footer-signature span{
+
+    color:#0fb9b1;
+
+    font-weight:600;
+
+    text-shadow:
+        0 0 6px rgba(15,185,177,0.8),
+        0 0 12px rgba(15,185,177,0.6),
+        0 0 18px rgba(15,185,177,0.4);
+
+    animation:signatureGlow 2s infinite ease-in-out;
+
+}
+
+@keyframes signatureGlow{
+
+    0%{
+        opacity:0.6;
+        text-shadow:
+        0 0 4px rgba(15,185,177,0.6),
+        0 0 8px rgba(15,185,177,0.4);
+    }
+
+    50%{
+        opacity:1;
+        text-shadow:
+        0 0 8px rgba(15,185,177,1),
+        0 0 16px rgba(15,185,177,0.8),
+        0 0 24px rgba(15,185,177,0.6);
+    }
+
+    100%{
+        opacity:0.6;
+        text-shadow:
+        0 0 4px rgba(15,185,177,0.6),
+        0 0 8px rgba(15,185,177,0.4);
+    }
+
+}
 /* =====================================================
    RESPONSIVIDADE
 ===================================================== */
