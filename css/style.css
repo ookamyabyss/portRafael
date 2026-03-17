@@ -1092,3 +1092,287 @@ footer h2{
     filter:drop-shadow(0 0 8px rgba(15,185,177,0.9));
 
 }
+
+
+
+
+/* ---------------- DIVIDIR PLUS MAIN  ---------------- */
+
+.section-divider-plus{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:20px;
+
+    width:100%;
+    max-width:1200px;
+
+    margin:60px auto;
+
+    position:relative;
+
+}
+
+/* =========================
+   LINHAS BASE (mais visível)
+========================= */
+
+.section-divider-plus .line{
+
+    flex:1;
+    height:4px;
+
+    background:rgba(255,215,0,0.15);
+
+    position:relative;
+    overflow:hidden;
+
+    box-shadow:
+        0 0 4px rgba(255,215,0,0.3),
+        0 0 10px rgba(255,215,0,0.2);
+
+}
+
+/* brilho vindo da esquerda */
+
+.section-divider-plus .line.left::after{
+
+    content:"";
+    position:absolute;
+
+    left:-30%;
+    top:0;
+
+    width:30%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #FFD700,
+        #FFF3B0,
+        #FFD700
+    );
+
+    filter:blur(2px);
+
+    box-shadow:
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 30px rgba(255,215,0,0.8);
+
+    animation:toCenterLeft 2.5s ease-in-out infinite;
+
+}
+
+/* brilho vindo da direita */
+
+.section-divider-plus .line.right::after{
+
+    content:"";
+    position:absolute;
+
+    right:-30%;
+    top:0;
+
+    width:30%;
+    height:100%;
+
+    background:linear-gradient(
+        270deg,
+        transparent,
+        #FFD700,
+        #FFF3B0,
+        #FFD700
+    );
+
+    filter:blur(2px);
+
+    box-shadow:
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 30px rgba(255,215,0,0.8);
+
+    animation:toCenterRight 2.5s ease-in-out infinite;
+
+}
+
+/* =========================
+   ANIMAÇÕES DAS LINHAS
+========================= */
+
+@keyframes runLeft{
+
+    0%{
+        transform:translateX(-120%);
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    50%{
+        transform:translateX(100%);
+    }
+
+    100%{
+        transform:translateX(100%);
+        opacity:0;
+    }
+
+}
+
+@keyframes runRight{
+
+    0%{
+        transform:translateX(120%);
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    50%{
+        transform:translateX(-100%);
+    }
+
+    100%{
+        transform:translateX(-100%);
+        opacity:0;
+    }
+
+}
+
+@keyframes toCenterLeft{
+
+    0%{
+        left:-30%;
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    100%{
+        left:100%;
+        opacity:0;
+    }
+
+}
+
+@keyframes toCenterRight{
+
+    0%{
+        right:-30%;
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    100%{
+        right:100%;
+        opacity:0;
+    }
+
+}
+
+/* =========================
+   PLUS CENTRAL (PROTAGONISTA)
+========================= */
+
+.section-divider-plus .plus{
+
+    font-size:20px;
+    font-weight:900;
+
+    color:#FFD700;
+
+    position:relative;
+
+    padding:2px 15px;
+
+    background:rgba(0,0,0,0.4);
+
+    animation:plusPulse 2.5s infinite ease-in-out;
+
+}
+
+/* impacto quando linhas chegam */
+
+.section-divider-plus .plus::after{
+
+    animation:plusWave 5s infinite;
+
+}
+
+/* =========================
+   ANIMAÇÃO DO PLUS
+========================= */
+
+@keyframes plusPulse{
+
+    0%{
+        transform:scale(1);
+        box-shadow:
+            0 0 6px rgba(255,215,0,0.4);
+    }
+
+    50%{
+        transform:scale(1.15);
+        box-shadow:
+            0 0 6px rgba(255,215,0,0.9),
+            0 0 6px rgba(255,215,0,0.6);
+    }
+
+    100%{
+        transform:scale(1);
+        box-shadow:
+            0 0 6px rgba(255,215,0,0.4);
+    }
+
+}
+
+@keyframes plusWave{
+
+    0%{
+        transform:scale(0.8);
+        opacity:0;
+    }
+
+    50%{
+        transform:scale(1.6);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(2.2);
+        opacity:0;
+    }
+
+}
+
+/* PULSO NEON NA LINHA */
+
+.section-divider-plus .line{
+
+    animation:linePulse 2s infinite ease-in-out;
+
+}
+
+
+
+
+
+
+
+
+
+
+
