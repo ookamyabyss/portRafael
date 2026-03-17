@@ -1124,14 +1124,15 @@ footer h2{
     flex:1;
     height:4px;
 
-    background:rgba(255,215,0,0.15);
+    background:rgba(15,185,177,0.15);
 
     position:relative;
     overflow:hidden;
 
     box-shadow:
-        0 0 4px rgba(255,215,0,0.3),
-        0 0 10px rgba(255,215,0,0.2);
+        0 0 4px rgba(15,185,177,0.4),
+        0 0 10px rgba(15,185,177,0.3);
+
 
 }
 
@@ -1151,17 +1152,17 @@ footer h2{
     background:linear-gradient(
         90deg,
         transparent,
-        #FFD700,
-        #FFF3B0,
-        #FFD700
+        #0fb9b1,
+        #6fffe9,
+        #0fb9b1
     );
 
     filter:blur(2px);
 
     box-shadow:
-        0 0 10px #FFD700,
-        0 0 20px #FFD700,
-        0 0 30px rgba(255,215,0,0.8);
+        0 0 10px #0fb9b1,
+        0 0 20px #0fb9b1,
+        0 0 30px rgba(15,185,177,0.9);
 
     animation:toCenterLeft 2.5s ease-in-out infinite;
 
@@ -1183,17 +1184,17 @@ footer h2{
     background:linear-gradient(
         270deg,
         transparent,
-        #FFD700,
-        #FFF3B0,
-        #FFD700
+        #0fb9b1,
+        #6fffe9,
+        #0fb9b1
     );
 
     filter:blur(2px);
 
     box-shadow:
-        0 0 10px #FFD700,
-        0 0 20px #FFD700,
-        0 0 30px rgba(255,215,0,0.8);
+        0 0 10px #0fb9b1,
+        0 0 20px #0fb9b1,
+        0 0 30px rgba(15,185,177,0.9);
 
     animation:toCenterRight 2.5s ease-in-out infinite;
 
@@ -1292,63 +1293,39 @@ footer h2{
     font-size:20px;
     font-weight:900;
 
-    color:#FFD700;
+    color:#0fb9b1;
 
     position:relative;
 
-    padding:2px 15px;
+    text-shadow:
+        0 0 4px rgba(15,185,177,0.4);
 
-    background:rgba(0,0,0,0.4);
-
-    animation:plusPulse 2.5s infinite ease-in-out;
-
-}
-
-/* impacto quando linhas chegam */
-
-.section-divider-plus .plus::after{
-
-    animation:plusWave 5s infinite;
+    animation:plusBlink 10s infinite;
 
 }
+
 
 /* =========================
    ANIMAÇÃO DO PLUS
 ========================= */
 
-@keyframes plusPulse{
-
-    0%{
-        transform:scale(1);
-        box-shadow:
-            0 0 6px rgba(255,215,0,0.4);
-    }
-
-    50%{
-        transform:scale(1.15);
-        box-shadow:
-            0 0 6px rgba(255,215,0,0.9),
-            0 0 6px rgba(255,215,0,0.6);
-    }
-
-    100%{
-        transform:scale(1);
-        box-shadow:
-            0 0 6px rgba(255,215,0,0.4);
-    }
-
-}
 
 @keyframes plusWave{
 
     0%{
         transform:scale(0.8);
         opacity:0;
+        box-shadow:
+            0 0 6px rgba(15,185,177,0.4);
     }
 
     50%{
         transform:scale(1.6);
         opacity:1;
+        box-shadow:
+            0 0 15px rgba(15,185,177,1),
+            0 0 30px rgba(15,185,177,0.7),
+            0 0 45px rgba(15,185,177,0.5);
     }
 
     100%{
@@ -1366,6 +1343,54 @@ footer h2{
 
 }
 
+@keyframes plusBlink{
+
+    0%{
+        opacity:0.3;
+        text-shadow:
+            0 0 2px rgba(15,185,177,0.2);
+    }
+
+    20%{
+        opacity:1;
+        text-shadow:
+            0 0 8px rgba(15,185,177,1),
+            0 0 16px rgba(15,185,177,0.8),
+            0 0 30px rgba(15,185,177,0.6);
+    }
+
+    25%{
+        opacity:0.4;
+    }
+
+    30%{
+        opacity:1;
+    }
+
+    60%{
+        opacity:1;
+        text-shadow:
+            0 0 10px rgba(15,185,177,1),
+            0 0 20px rgba(15,185,177,0.8),
+            0 0 40px rgba(15,185,177,0.6);
+    }
+
+    65%{
+        opacity:0.2;
+    }
+
+    70%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.7;
+        text-shadow:
+            0 0 6px rgba(15,185,177,0.6),
+            0 0 12px rgba(15,185,177,0.4);
+    }
+
+}
 
 
 
