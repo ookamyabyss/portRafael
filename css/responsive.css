@@ -85,7 +85,7 @@
     }
 
     .skills{
-        flex-direction:flex; /* empilha DEV e DESIGN */
+        flex-direction:column; /* empilha DEV e DESIGN */
         gap:30px;
         align-items:center; /* centraliza tudo */
     }
