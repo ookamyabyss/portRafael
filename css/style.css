@@ -1573,7 +1573,7 @@ footer h2{
     .menu-btn{
         width:100%;        /* ocupa toda largura */
         max-width:300px;   /* não fica gigante */
-        font-size:1.5rem;  /* diminui no celular */
+        font-size:1.3rem;  /* diminui no celular */
         letter-spacing:0.1em;
     }
 
