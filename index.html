@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,45 +22,13 @@
 
     <nav class="hero-nav">
 
-        <div class="logo">
-            Rafael Cruz | Dev Front End
-        </div>
+        <h1 class="logo">
+            Rafael Cruz | Dev Front-End
+        </h1>
 
-        <!-- STATUS 
-        <div class="status">
-
-            <div class="status-item xbox-status">
-
-                <i data-lucide="gamepad-2" class="status-icon"></i>
-                <span class="status-dot xbox"></span>
-
-                <div class="tooltip xbox-tooltip">
-                    <span class="tooltip-status">Xbox</span>
-                    <span class="tooltip-game">Coming Soon</span>
-                </div>
-
-            </div>
-
-            <div class="status-item spotify-status">
-
-                <i data-lucide="headphones" class="status-icon"></i>
-                <span class="status-dot spotify"></span>
-
-                <div class="tooltip spotify-tooltip">
-                    <span class="tooltip-artist">Spotify</span>
-                    <span class="tooltip-song">Coming Soon</span>
-                </div>
-
-            </div>
-
-        </div>
-
-        -->
-
-        <!-- LINKS -->
         <div class="nav-links">
 
-            <a href="https://github.com/ookamyabyss" target="_blank" class="nav-link">
+            <a href="https://github.com/ookamyabyss" target="_blank" rel="noopener noreferrer" class="nav-link">
                 GIT
             </a>
 
@@ -68,8 +36,11 @@
                 CONTATO
             </a>
 
-            <a href="https://drive.google.com/file/d/1RUVX-GxAGIDcEGzku5TtMSwz3fxWKa3u/view?usp=sharing" class="nav-link">
-                CURRÍCULO  
+            <a href="https://drive.google.com/file/d/1RUVX-GxAGIDcEGzku5TtMSwz3fxWKa3u/view?usp=sharing"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="nav-link">
+                CURRÍCULO
             </a>
 
         </div>
@@ -165,6 +136,89 @@
         <div class="line right"></div>
 
     </div>
+
+    <section class="courses-section">
+
+        <!-- MENU TIPO GAME -->
+        <div class="courses-menu">
+
+            <button class="menu-btn active" data-tab="courses">CURSOS</button>
+            <button class="menu-btn" data-tab="certs">CERTIFICAÇÕES</button>
+            <button class="menu-btn" data-tab="langs">IDIOMAS</button>
+
+        </div>
+
+        <!-- CONTEÚDO -->
+        <div class="courses-content">
+
+            <!-- CURSOS -->
+            <div class="tab-content active" id="courses">
+
+                <div class="categories-grid">
+
+                    <!-- FRONT -->
+                    <div class="category">
+
+                        <h3>FRONT-END</h3>
+
+                        <ul class="course-list" data-category="front">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                        </ul>
+
+                        <button class="scroll-btn">▼</button>
+
+                    </div>
+
+                    <!-- BACK -->
+                    <div class="category">
+                        <h3>BACK-END</h3>
+
+                        <ul class="course-list" data-category="back">
+                            <li>Node.js</li>
+                            <li>APIs</li>
+                            <li>Express</li>
+                            <li>Banco de Dados</li>
+                            <li>Auth</li>
+                        </ul>
+
+                        <button class="scroll-btn">▼</button>
+                    </div>
+
+                    <!-- OUTROS -->
+                    <div class="category">
+                        <h3>OUTROS</h3>
+
+                        <ul class="course-list" data-category="back">
+                            <li>Git / Git Hub</li>
+                            <li>APIs</li>
+                            <li>Express</li>
+                            <li>Banco de Dados</li>
+                            <li>Auth</li>
+                        </ul>
+
+                        <button class="scroll-btn">▼</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CERTIFICAÇÕES -->
+            <div class="tab-content" id="certs">
+                <p class="dev-text">EM DESENVOLVIMENTO...</p>
+            </div>
+
+            <!-- IDIOMAS -->
+            <div class="tab-content" id="langs">
+                <p class="dev-text">EM DESENVOLVIMENTO...</p>
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
