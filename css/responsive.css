@@ -47,9 +47,7 @@
 
 @media (max-width:600px){
 
-    .about-grid{
-        flex-direction:center;
-    }
+
     .hero-nav{
         padding:20px;
     }
@@ -102,6 +100,31 @@
         width:100%;         /* todos do mesmo tamanho */
         max-width:250px;
         text-align:center;
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    .about-info{
+        text-align:center; /* centraliza tudo dentro */
+    }
+
+    .about-info h2{
+        display:block; /* ocupa linha toda */
+        margin:0 auto 20px;
+    }
+
+    .info-list{
+        margin-right:0; /* remove aquele empurrão pra direita */
+        align-items:center; /* centraliza os itens */
+    }
+
+    .info-list li{
+        text-align:center;
+        width:100%;
+        max-width:320px;
     }
 
 }
