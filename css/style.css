@@ -1573,10 +1573,27 @@ footer h2{
     .menu-btn{
         width:100%;        /* ocupa toda largura */
         max-width:300px;   /* não fica gigante */
-        font-size:0.9rem;  /* diminui no celular */
+        font-size:1.5rem;  /* diminui no celular */
         letter-spacing:0.1em;
     }
 
 }
 
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width:600px){
+
+    .hero-nav{
+        padding:20px;
+    }
+
+    .logo{
+        font-size:0.7rem;
+    }
+
+    .hero-content h1{
+        font-size:clamp(1.8rem,10vw,3rem);
+    }
+
+}
 
