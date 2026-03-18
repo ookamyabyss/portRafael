@@ -1562,4 +1562,21 @@ footer h2{
 
 }
 
+@media (max-width:600px){
+
+    .courses-menu{
+        flex-direction: column; /* empilha */
+        align-items: center;    /* centraliza */
+        gap:10px;
+    }
+
+    .menu-btn{
+        width:100%;        /* ocupa toda largura */
+        max-width:300px;   /* não fica gigante */
+        font-size:0.9rem;  /* diminui no celular */
+        letter-spacing:0.1em;
+    }
+
+}
+
 
