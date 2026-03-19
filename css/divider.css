@@ -1,0 +1,537 @@
+/* ---------------- PRIMEIRA TOPO ---------------- */
+/* ----------------------------------------------- */
+
+.section-divider{
+
+    width:100%;
+    height:3px;
+
+    background:#1a1a1a;
+
+    position:relative;
+    overflow:hidden;
+
+    box-shadow:
+        0 0 4px rgba(15,185,177,0.4),
+        0 0 8px rgba(15,185,177,0.3);
+
+    animation:dividerGlow 2.5s ease-in-out infinite;
+
+}
+
+.section-divider::before,
+.section-divider::after{
+
+    content:"";
+    position:absolute;
+    top:0;
+
+    width:50%;
+    height:100%;
+
+    filter:drop-shadow(0 0 8px rgba(15,185,177,0.9));
+
+}
+
+.section-divider::before{
+
+    left:0;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(15,185,177,0.9)
+    );
+
+    animation:dividerLeft 2.8s ease-in-out infinite;
+
+}
+
+.section-divider::after{
+
+    right:0;
+
+    background:linear-gradient(
+        270deg,
+        transparent,
+        rgba(15,185,177,0.9)
+    );
+
+    animation:dividerRight 2.8s ease-in-out infinite;
+
+}
+
+@keyframes dividerLeft{
+
+    0%{
+        transform:translateX(-100%);
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    50%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(0);
+        opacity:0;
+    }
+
+}
+
+@keyframes dividerRight{
+
+    0%{
+        transform:translateX(100%);
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    50%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(0);
+        opacity:0;
+    }
+
+}
+
+.section-divider::after{
+    filter:drop-shadow(0 0 6px rgba(15,185,177,0.7));
+}
+
+.section-divider .impact{
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    width:6px;
+    height:6px;
+
+    background:#0fb9b1;
+
+    border-radius:50%;
+
+    transform:translate(-50%,-50%) scale(0);
+
+    box-shadow:
+    0 0 6px rgba(15,185,177,1),
+    0 0 12px rgba(15,185,177,0.9),
+    0 0 20px rgba(15,185,177,0.6);
+
+    animation:centerImpact 2.8s ease-in-out infinite;
+
+}
+
+.section-divider .impact::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-6px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(15,185,177,0.6);
+
+    animation:impactWave 2.8s ease-out infinite;
+
+}
+
+@keyframes impactWave{
+
+    50%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    70%{
+        transform:scale(2.5);
+        opacity:0;
+    }
+
+}
+
+@keyframes centerImpact{
+
+    0%{
+        transform:translate(-50%,-50%) scale(0);
+        opacity:0;
+    }
+
+    45%{
+        transform:translate(-50%,-50%) scale(0);
+        opacity:0;
+    }
+
+    50%{
+        transform:translate(-50%,-50%) scale(1.6);
+        opacity:1;
+    }
+
+    55%{
+        transform:translate(-50%,-50%) scale(0.6);
+        opacity:0.8;
+    }
+
+    70%{
+        transform:translate(-50%,-50%) scale(0);
+        opacity:0;
+    }
+
+}
+
+@keyframes dividerGlow{
+
+    0%{
+
+        box-shadow:
+        0 0 3px rgba(15,185,177,0.3),
+        0 0 6px rgba(15,185,177,0.2);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 8px rgba(15,185,177,0.9),
+        0 0 18px rgba(15,185,177,0.7),
+        0 0 28px rgba(15,185,177,0.5);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 3px rgba(15,185,177,0.3),
+        0 0 6px rgba(15,185,177,0.2);
+
+    }
+
+}
+
+/* ---------------- PRIMEIRA TOPO ---------------- */
+/* ----------------------------------------------- */
+
+/* ------------------ MEIO PLUS ------------------ */
+/* ----------------------------------------------- */
+
+
+#footer-line{
+
+    filter:drop-shadow(0 0 4px rgba(255,255,255,0.6));
+
+}
+
+#footer-light{
+
+    filter:drop-shadow(0 0 8px rgba(15,185,177,0.9));
+
+}
+
+.section-divider-plus{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:20px;
+
+    width:100%;
+    max-width:1200px;
+
+    margin:30px auto;
+
+    position:relative;
+
+}
+
+.section-divider-plus .line{
+
+    flex:1;
+    height:4px;
+
+    background:rgba(15,185,177,0.15);
+
+    position:relative;
+    overflow:hidden;
+
+    box-shadow:
+        0 0 4px rgba(15,185,177,0.4),
+        0 0 10px rgba(15,185,177,0.3);
+
+
+}
+
+.section-divider-plus .line.left::after{
+
+    content:"";
+    position:absolute;
+
+    left:-30%;
+    top:0;
+
+    width:30%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #0fb9b1,
+        #6fffe9,
+        #0fb9b1
+    );
+
+    filter:blur(2px);
+
+    box-shadow:
+        0 0 10px #0fb9b1,
+        0 0 20px #0fb9b1,
+        0 0 30px rgba(15,185,177,0.9);
+
+    animation:toCenterLeft 2.5s ease-in-out infinite;
+
+}
+
+.section-divider-plus .line.right::after{
+
+    content:"";
+    position:absolute;
+
+    right:-30%;
+    top:0;
+
+    width:30%;
+    height:100%;
+
+    background:linear-gradient(
+        270deg,
+        transparent,
+        #0fb9b1,
+        #6fffe9,
+        #0fb9b1
+    );
+
+    filter:blur(2px);
+
+    box-shadow:
+        0 0 10px #0fb9b1,
+        0 0 20px #0fb9b1,
+        0 0 30px rgba(15,185,177,0.9);
+
+    animation:toCenterRight 2.5s ease-in-out infinite;
+
+}
+
+@keyframes runLeft{
+
+    0%{
+        transform:translateX(-120%);
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    50%{
+        transform:translateX(100%);
+    }
+
+    100%{
+        transform:translateX(100%);
+        opacity:0;
+    }
+
+}
+
+@keyframes runRight{
+
+    0%{
+        transform:translateX(120%);
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    50%{
+        transform:translateX(-100%);
+    }
+
+    100%{
+        transform:translateX(-100%);
+        opacity:0;
+    }
+
+}
+
+@keyframes toCenterLeft{
+
+    0%{
+        left:-30%;
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    100%{
+        left:100%;
+        opacity:0;
+    }
+
+}
+
+@keyframes toCenterRight{
+
+    0%{
+        right:-30%;
+        opacity:0;
+    }
+
+    40%{
+        opacity:1;
+    }
+
+    100%{
+        right:100%;
+        opacity:0;
+    }
+
+}
+
+.section-divider-plus .plus{
+
+    font-size:20px;
+    font-weight:900;
+
+    color:#0fb9b1;
+
+    position:relative;
+
+    text-shadow:
+        0 0 4px rgba(15,185,177,0.4);
+
+    animation:plusBlink 10s infinite;
+
+}
+
+@keyframes plusWave{
+
+    0%{
+        transform:scale(0.8);
+        opacity:0;
+        box-shadow:
+            0 0 6px rgba(15,185,177,0.4);
+    }
+
+    50%{
+        transform:scale(1.6);
+        opacity:1;
+        box-shadow:
+            0 0 15px rgba(15,185,177,1),
+            0 0 30px rgba(15,185,177,0.7),
+            0 0 45px rgba(15,185,177,0.5);
+    }
+
+    100%{
+        transform:scale(2.2);
+        opacity:0;
+    }
+
+}
+
+.section-divider-plus .line{
+
+    animation:linePulse 2s infinite ease-in-out;
+
+}
+
+@keyframes plusBlink{
+
+    0%{
+        opacity:0.3;
+        text-shadow:
+            0 0 2px rgba(15,185,177,0.2);
+    }
+
+    20%{
+        opacity:1;
+        text-shadow:
+            0 0 8px rgba(15,185,177,1),
+            0 0 16px rgba(15,185,177,0.8),
+            0 0 30px rgba(15,185,177,0.6);
+    }
+
+    25%{
+        opacity:0.4;
+    }
+
+    30%{
+        opacity:1;
+    }
+
+    60%{
+        opacity:1;
+        text-shadow:
+            0 0 10px rgba(15,185,177,1),
+            0 0 20px rgba(15,185,177,0.8),
+            0 0 40px rgba(15,185,177,0.6);
+    }
+
+    65%{
+        opacity:0.2;
+    }
+
+    70%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0.7;
+        text-shadow:
+            0 0 6px rgba(15,185,177,0.6),
+            0 0 12px rgba(15,185,177,0.4);
+    }
+
+}
+
+/* ------------------ MEIO PLUS ------------------ */
+/* ----------------------------------------------- */
+
+
+/* ------------------ ULTIMO CURVA ------------------ */
+/* ----------------------------------------------- */
+
+.section-divider-footer{
+
+    width:100%;
+    max-width:1200px;
+    margin:20px auto;
+
+}
+
+.section-divider-footer svg{
+
+    width:100%;
+    height:60px;
+
+}
+
+/* ------------------ ULTIMO CURVA ------------------ */
+/* ----------------------------------------------- */

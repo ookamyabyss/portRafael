@@ -187,3 +187,15 @@ document.addEventListener("DOMContentLoaded", () => {
     initCourseScroll();
 
 });
+
+
+document.querySelectorAll('.category').forEach(category => {
+
+    const list = category.querySelector('.course-list');
+    const count = category.querySelector('.count');
+
+    if(list && count){
+        count.textContent = `(${list.children.length})`;
+    }
+
+});
